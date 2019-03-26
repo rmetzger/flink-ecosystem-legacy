@@ -1,0 +1,46 @@
+<!-- NG-ZORRO -->
+
+<nz-layout>
+  <nz-sider [nzTheme]="'light'" [nzWidth]="256">
+    <img
+      class="logo"
+      src="/assets/flink_squirrel_500.png"
+      alt="flink squirrel"
+    />
+    <h1>
+      Apache Flink<br />
+      Community Packages
+    </h1>
+    <ul nz-menu [nzMode]="'inline'" [nzInlineCollapsed]="collapsed">
+      <li nz-submenu [nzOpen]="true">
+        <span title>
+          Categories
+        </span>
+        <ul>
+          <li nz-menu-item>Connectors</li>
+          <li nz-menu-item>Metrics</li>
+          <li nz-menu-item>Tools</li>
+          <li nz-menu-item>Machine Learning</li>
+          <li nz-menu-item>Languages</li>
+        </ul>
+      </li>
+    </ul>
+  </nz-sider>
+  <nz-layout>
+    <nz-header>
+      <a href="#" class="github">Log in with Github</a>
+      <nz-input-group [nzSuffix]="suffixIconSearch">
+        <input type="text" nz-input placeholder="search" />
+      </nz-input-group>
+      <ng-template #suffixIconSearch>
+        <i nz-icon type="search"></i>
+      </ng-template>
+    </nz-header>
+    <nz-content>Content</nz-content>
+    <nz-footer>Footer</nz-footer>
+  </nz-layout>
+</nz-layout>
+
+<!-- <a href="https://github.com/NG-ZORRO/ng-zorro-antd" target="_blank" style="display: flex;align-items: center;justify-content: center;height: 100%;width: 100%;">
+  <img height="300" src="https://img.alicdn.com/tfs/TB1X.qJJgHqK1RjSZFgXXa7JXXa-89-131.svg">
+</a> -->

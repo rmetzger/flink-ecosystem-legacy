@@ -1,0 +1,39 @@
+nz-layout {
+  min-height: 100vh;
+}
+
+.logo {
+  max-width: 100%;
+  padding: 20px 20%;
+  object-fit: contain;
+}
+
+h1 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+nz-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  height: 50px;
+  background: #fff;
+
+  .github {
+    line-height: 1.4;
+    margin-right: 2em;
+  }
+}
+
+nz-content {
+  background: #fff;
+}
+
+nz-footer {
+  background: #fff;
+}
+
+nz-input-group {
+  width: 256px;
+}
