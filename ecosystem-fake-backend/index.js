@@ -10,6 +10,9 @@ const init = async () => {
   const server = Hapi.server({
     port: 3000,
     host: "localhost",
+    routes: {
+      cors: true,
+    },
   });
 
   server.route({
@@ -18,7 +21,7 @@ const init = async () => {
     handler: async (request, h) => {
       const vote = {
         username: { faker: "internet.userName" },
-        repo: { faker: "internet.url" },
+        repository: { faker: "internet.url" },
       };
 
       votes = await mocker()
@@ -53,9 +56,11 @@ const init = async () => {
         added: { faker: "date.past" },
       };
 
-      return mocker()
+      const packages = await mocker()
         .schema("packages", package, 5)
         .build();
+
+      return { items: packages.packages };
     },
   });
 

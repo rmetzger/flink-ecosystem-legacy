@@ -36,11 +36,11 @@
         <i nz-icon type="search"></i>
       </ng-template>
     </nz-header>
-    <nz-content>Content</nz-content>
+    <nz-content>
+      <ul>
+        <li *ngFor="let package of packages">{{ package.name }}</li>
+      </ul>
+    </nz-content>
     <nz-footer>Footer</nz-footer>
   </nz-layout>
 </nz-layout>
-
-<!-- <a href="https://github.com/NG-ZORRO/ng-zorro-antd" target="_blank" style="display: flex;align-items: center;justify-content: center;height: 100%;width: 100%;">
-  <img height="300" src="https://img.alicdn.com/tfs/TB1X.qJJgHqK1RjSZFgXXa7JXXa-89-131.svg">
-</a> -->
