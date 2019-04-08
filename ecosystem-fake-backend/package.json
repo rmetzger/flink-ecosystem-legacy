@@ -1,0 +1,18 @@
+{
+  "name": "ecosystem-fake-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "hapi": "^18.1.0",
+    "mocker-data-generator": "^2.6.6",
+    "nodemon": "^1.18.10"
+  },
+  "devDependencies": {},
+  "description": "",
+  "scripts": {
+    "start": "nodemon --inspect index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
