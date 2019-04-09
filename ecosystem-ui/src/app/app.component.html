@@ -37,9 +37,7 @@
       </ng-template>
     </nz-header>
     <nz-content>
-      <ul>
-        <li *ngFor="let package of packages">{{ package.name }}</li>
-      </ul>
+      <router-outlet></router-outlet>
     </nz-content>
     <nz-footer>Footer</nz-footer>
   </nz-layout>

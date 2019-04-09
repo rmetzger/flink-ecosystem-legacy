@@ -5,9 +5,11 @@ import {
   OnDestroy,
   OnInit
 } from "@angular/core";
-import { PackagesService, Package } from "./services/packages.service";
+import { PackagesService } from "./services/packages.service";
 import { takeUntil } from "rxjs/operators";
 import { Subject } from "rxjs";
+import { Package } from "./interfaces/package";
+// import { Router, ActivatedRoute } from "@angular/router";
 
 @Component({
   selector: "app-root",
@@ -21,6 +23,8 @@ export class AppComponent implements OnInit, OnDestroy {
   private destroy$ = new Subject<void>();
 
   constructor(
+    // private router: Router,
+    // private activatedRoute: ActivatedRoute,
     private packagesService: PackagesService,
     private cdr: ChangeDetectorRef
   ) {}
